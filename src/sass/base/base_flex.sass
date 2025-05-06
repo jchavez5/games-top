@@ -1,0 +1,36 @@
+@use 'variables' as *
+@use 'mixins' as *
+@use 'breakpoints' as *
+
+.d-flex
+  @include display-flex()
+
+.d-flex--center
+  @include display-flex(center)
+
+.d-flex--flex-start--center
+  @include display-flex(flex-start, center)
+
+.d-flex--flex-end--center
+  @include display-flex(flex-end, center)
+
+.d-flex--flex-end--flex-end
+  @include display-flex(flex-end, flex-end)
+
+.d-flex--center--center
+  @include display-flex(center, center)
+
+.d-flex--space-between--center
+  @include display-flex(space-between, center)
+
+.d-flex--space-between--start
+  @include display-flex(space-between, flex-start)
+
+.d-flex--direction--column
+  flex-direction: column
+
+
+
+.d-flex--center--center--lg
+  @include mediaquery(lg)
+    @include display-flex(center, center)

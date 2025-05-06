@@ -1,0 +1,73 @@
+@use 'variables' as *
+@use 'mixins' as *
+@use 'base_font' as *
+@use 'breakpoints' as *
+
+.animation-sync
+  animation-name: rotate
+  animation-duration: 5s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  border-radius: 50%
+
+@keyframes rotate
+  from
+    transform: rotate(-360deg)
+  to
+    transform: rotate(360deg)
+
+button
+  padding-left: 1rem !important
+  padding-right: 1rem !important
+  border-radius: .5rem !important
+
+
+.btn
+  @include display-flex(center, center)
+  padding: .5rem !important
+  min-width: 40px !important
+  height: 42px !important
+  border-radius: 12px !important
+  @extend .font-btn !optional
+  &:disabled
+    opacity: .5
+  mat-icon
+    margin: 0 !important
+  &-icon
+    color: $white !important
+    padding: 0 !important
+  &__action
+    width: 100% !important
+  &-danger
+    background-color: $color-negative !important
+    color: $white !important
+  &-primary
+    background-color: $color-primary !important
+    color: $white !important
+    padding: .5rem 2rem !important
+  &-secondary
+    background-color: $color-secundary !important
+    color: $white !important
+    padding: .5rem 2rem !important
+  &__tertiary
+    @extend .font-primary !optional
+    background-color: $white !important
+    color: $color-azul-oscuro !important
+    &.active
+      background-color: $color-verde-oscuro !important
+  &__ghost
+    @extend .font-ghost !optional
+  &-sm
+    height: auto !important
+    padding: 5px 2.5px !important
+  &__circle
+    padding: 0 !important
+    border-radius: 50%
+  &__link
+    @extend .font-primary !optional
+    color: $color-verde-oscuro !important
+    padding: 0 !important
+    font-weight: 500 !important
+    &:hover
+      text-decoration: underline
+

@@ -1,0 +1,69 @@
+@use 'variables' as *
+@use 'breakpoints' as *
+
+@for $i from 0 through 20
+  .w-#{5*$i}
+    width: 5% * $i
+
+.vh-100
+  height: 100vh
+
+.container
+  width: 100%
+  max-width: 100%
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  //@include mediaquery(lg)
+  //  width: calc($container-max-width + 200px)
+
+.container-full
+  width: 100%
+  height: calc( 100vh - $container-footer)
+  &-transacciones
+    height: calc( 100vh - $container-footer - $header-height)
+    max-height: calc( 100vh - $container-footer - $header-height)
+    background-color: $color-primary-500
+
+
+@for $i from 1 through 10
+  .p-#{$i}
+    padding: 0.25rem * $i !important
+  .m-#{$i}
+    margin: 0.25rem * $i !important
+  .px-#{$i}
+    padding-right: 0.25rem * $i !important
+    padding-left: 0.25rem * $i !important
+  .py-#{$i}
+    padding-top: 0.25rem * $i !important
+    padding-bottom: 0.25rem * $i !important
+  .pb-#{$i}
+    padding-bottom: 0.25rem * $i !important
+  .mb-#{$i}
+    margin-bottom: 0.25rem * $i !important
+  .pt-#{$i}
+    padding-top: 0.25rem * $i !important
+  .mt-#{$i}
+    margin-top: 0.25rem * $i !important
+  .pr-#{$i}
+    padding-right: 0.25rem * $i !important
+  .mr-#{$i}
+    margin-right: 0.25rem * $i !important
+  .pl-#{$i}
+    padding-left: 0.25rem * $i !important
+  .ml-#{$i}
+    margin-left: 0.25rem * $i !important
+  .mx-#{$i}
+    margin-right: 0.25rem * $i !important
+    margin-left: 0.25rem * $i !important
+  .my-#{$i}
+    margin-top: 0.25rem * $i !important
+    margin-bottom: 0.25rem * $i !important
+
+.container-form
+  width: 100%
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  @include mediaquery(lg)
+    width: 600px

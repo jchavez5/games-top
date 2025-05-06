@@ -1,0 +1,65 @@
+$header-height-login: 90px;
+$header-height: 56px;
+
+$font-primary : Roboto, sans-serif;
+
+$container-max-width: 1356px;
+$container-footer: 64px;
+
+
+$background-color-panel: #F9F9F9;
+$color-text-principal: #333333;
+$color-text-tertiary: #9d9d9d;
+$color-positive: #00B2A5;
+$color-negative: #FF5252;
+
+$color-azul-oscuro: rgba(20,21,31,1);
+$color-gris-oscuro: #2A3440;
+$color-gris-medio: #3E4955;
+$color-gris-claro: #596572;
+$color-gris-muy-claro: #717C8A;
+$color-gris-mas-claro: #B0B0B0;
+
+$color-verde-oscuro: #00B2A5;      // Verde más oscuro
+$color-verde-ligero: #01c4b6;      // Verde más saturado y ligero
+$color-verde-brillante: #19c9bb;   // Verde brillante
+$color-verde-pastel: #36ccbf;      // Verde pastel, suave
+$color-verde-claro: #5ccec1;        // Verde más claro, pastel suave
+$color-verde-mas-claro: #b2e8dc;    // Verde más claro, pastel suave
+
+$color-red-oscuro: #ff0000;      // Verde más oscuro
+$color-red-pastel: #FF5252;      // Verde pastel, suave
+$color-red-mas-claro: #ff8b8b;    // Verde más claro, pastel suave
+
+$color-blue-medio: #2D6DF6;    // Verde más claro, pastel suave
+$color-blue-claro: #DFEAFF;    // Verde más claro, pastel suave
+
+//$color-primary: #1E1E3F;
+$color-primary: $color-azul-oscuro;
+$color-primary-50:  #949494;
+$color-primary-100: #afafaf;
+$color-primary-200: #c9c9c9;
+$color-primary-300: #dedede;
+$color-primary-400: #ececec;
+$color-primary-500: #f3f3f3;
+$white: #ffffff;
+$border: 10px;
+$color-secundary: $color-verde-oscuro;
+
+$box-shadow: 0px 2px 3px $color-azul-oscuro;
+$transition:  all .3s ease;
+
+$card-box-shadow: 0px 0px 0px 0px transparent,
+0px 0px 0px 0px transparent,
+0 1px 3px 0 rgba(0, 0, 0, 0.1),
+0 1px 2px -1px rgba(0, 0, 0, 0.1) !important;
+
+$card-box-shadow-secondary: 0px 0px 0px 0px transparent,
+0px 0px 0px 0px transparent,
+0 1px 3px 0 $color-verde-oscuro,
+0 1px 2px -1px $color-verde-oscuro !important;
+
+$linear-gradient-azul: rgba(20,21,31,1);
+$linear-gradient-verde: rgba(0,92,86,1);
+$linear-gradient: linear-gradient(to right, $linear-gradient-verde 0%, $linear-gradient-azul  8%, $linear-gradient-azul 92%, $linear-gradient-verde 100%);
+$linear-gradient-white: linear-gradient(to right, $linear-gradient-verde 0%, $white  8%, $white 92%, $linear-gradient-verde 100%);

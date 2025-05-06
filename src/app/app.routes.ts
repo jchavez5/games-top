@@ -1,3 +1,15 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import {authRoutes} from "@features/auth/auth.routes";
+import {DashboardComponent} from "@features/dashboard/dashboard.component";
+export const appRoutes: Routes = [
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  ...authRoutes,
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  }
+];

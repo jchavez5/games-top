@@ -1,0 +1,28 @@
+//* Style generator for button states
+@mixin set-buttons(
+  $bgColor,
+  $color,
+  $hover,
+  $focus,
+  $disabled,
+  $focusBorder,
+  $border,
+  $borderDisabled) {
+  background-color: $bgColor;
+  color: $color ;
+  border: $border;
+  &:hover {
+    background-color: $hover;
+    color: $color;
+  }
+  &:focus {
+    background-color: $focus;
+    border: $focusBorder;
+  }
+  &[disabled][disabled] {
+    color: #858585;
+    background-color: $disabled;
+    cursor: not-allowed;
+    border: $borderDisabled;
+  }
+}

@@ -1,0 +1,34 @@
+// RESPONSIVE Mobile First
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+@mixin mediaquery($size) {
+  @if $size == sm {
+    @media screen and (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+  @else if $size == md {
+    @media screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  @else if $size == lg {
+    @media screen and (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+  @else if $size == xl {
+    @media screen and (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+  @else if $size == xxl {
+    @media screen and (min-width: $breakpoint-xxl) {
+      @content;
+    }
+  }
+}

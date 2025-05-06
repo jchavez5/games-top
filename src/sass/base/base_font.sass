@@ -1,0 +1,64 @@
+@use 'variables' as *
+@use 'mixins' as *
+
+@mixin font-primary()
+  font: normal 500 1rem/1 $font-primary
+  color: $color-primary
+
+@mixin font-secondary()
+  font: normal 500 .875rem/1  $font-primary
+  color: $color-text-principal
+
+@mixin font-tertiary()
+  font: normal 400 .875rem/1  $font-primary
+  color: $color-text-tertiary
+
+@mixin font-btn()
+  font: normal 400 1rem/1  $font-primary
+  color: $color-primary
+
+p, strong
+  @include font-primary()
+  font-weight: 400 !important
+  &.title
+    font-weight: 700 !important
+
+label
+  @include font-secondary()
+  font-weight: 400 !important
+  color: $color-text-principal !important
+
+strong
+  font-weight: 500 !important
+
+
+.font-primary
+  @include font-primary()
+
+.font-secondary
+  @include font-secondary()
+
+.font-tertiary
+  @include font-tertiary()
+
+.font-text
+  font: normal 400 .875rem/1  $font-primary
+  color: $color-text-principal
+
+.font-link
+  @include font-btn()
+  font-weight: 500 !important
+
+.text-center
+  text-align: center !important
+
+.text-end
+  text-align: end !important
+
+.color-white
+  color: $white !important
+
+.fw-bold
+  font-weight: 700 !important
+.fw-500
+  font-weight: 500 !important
