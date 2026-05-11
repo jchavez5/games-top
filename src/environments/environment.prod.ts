@@ -5,7 +5,7 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 export const environment = {
-  production: false,
+  production: true,
   nameApp: 'Games top',
   firebaseConfig: {
     apiKey: "AIzaSyBWgjLYhBBH_E6LaDYnusC1OI1s1-5wzI4",
@@ -20,4 +20,4 @@ export const environment = {
     apiUrl: "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
     apiKey: "AIzaSyBCZYlXJrKc4z573Mqonruh5EdbbFzOaDY"
   }
-}
+};

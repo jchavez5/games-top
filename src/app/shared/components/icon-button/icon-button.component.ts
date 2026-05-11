@@ -10,6 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class IconButtonComponent {
   @Input() label: string = '';
-  @Input() icon: string = ''; // Puede ser un nombre de clase, como 'fa fa-plus'
-  @Input() color: string = 'primary'; // 'primary', 'accent', 'warn' (ejemplo)
+  @Input() icon: string = '';
+  @Input() color: 'btn-primary' | 'btn-secondary'  | 'btn-secondary' = 'btn-primary';
 }

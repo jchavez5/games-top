@@ -1,15 +1,23 @@
 import { Routes } from '@angular/router';
-import {authRoutes} from "@features/auth/auth.routes";
-import {DashboardComponent} from "@features/dashboard/dashboard.component";
+
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
-  ...authRoutes,
   {
-    path: 'dashboard',
-    component: DashboardComponent
+    path: 'auth',
+    loadComponent: () => import('./features/auth/auth').then(m => m.Auth),
+    title: 'Iniciar sesión - app global'
+  },
+  {
+    path: 'chat',
+    loadComponent: () => import('./features/chat/chat').then(m => m.Chat),
+    title: 'Chat - Asistente'
+  },
+  {
+    path: '**',
+    redirectTo: 'auth'
   }
 ];
